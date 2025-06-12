@@ -49,6 +49,23 @@ body {
   }
 }
 
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-border {
+  background: linear-gradient(270deg, #00f5ff, #bf00ff, #00f5ff);
+  background-size: 600% 600%;
+  animation: borderGlow 2s ease infinite;
+  padding: 2px;
+  border-radius: 1rem;
+}
+
 .particle {
   position: absolute;
   width: 2px;
